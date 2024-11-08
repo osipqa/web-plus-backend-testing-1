@@ -13,7 +13,7 @@ describe('PostsService', () => {
   });
 
   it('should add a new post', () => {
-    /// реализуйте тест-кейс
+    // реализуйте тест-кейс
     const createPost = postsService.create(post);
     expect(createPost).toHaveProperty('id');
     expect(createPost).toHaveProperty('date');
@@ -21,7 +21,7 @@ describe('PostsService', () => {
   });
 
   it('should find a post', () => {
-    /// реализуйте тест-кейс
+    // реализуйте тест-кейс
     const createPost = postsService.create(post);
     const foundPost = postsService.find(createPost.id);
     expect(foundPost).toEqual(createPost);
